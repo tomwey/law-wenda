@@ -7,6 +7,9 @@ gem 'rails', '3.2.12'
 
 group :development do
   gem 'sqlite3'
+  
+  # 关掉assets pipeline日志
+  gem 'quiet_assets'
 end
 
 group :production do
