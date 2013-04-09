@@ -5,3 +5,22 @@ zh-CN:
   
   label:
     sign_in: "登录"
+    sign_up: "注册"
+    nickname: "昵称"
+    email_address: "Email 地址"
+    password: "密码"
+  
+  slogan:
+    title: "专注法律方面的问答社区"
+    description: "在这里，如果你是一名普通的用户，那么你可以以最快的速度找到你所提问题的答案；如果你是一名律师，那么你可以尽情的展示你的才学。"
+    
+  highlights:
+    free:
+      title: "完全免费"
+      description: "您可以免费提问"
+    more_features:
+      title: "更多功能"
+      description: "我们会不断推出更多新的功能，尽请期待！！！"
+    join_us:
+      title: "欢迎加入我们"
+      description: "也许你愿意和我们一起来搭建一个更好的平台，请加入法律问答"

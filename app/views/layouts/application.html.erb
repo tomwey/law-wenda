@@ -7,32 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="signed_out">
-	<header id="header">
-		<div class="navbar navbar-static-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>
-					<a class="brand" href="#">
-						<span class="icon-wenda"></span>
-						<span><%= t('layout.wenda') %></span>
-					</a>
-					<div class="nav-collapse collapse">
-						<ul class="unstyled pull-right">
-							<li>
-								<a class="btn" href="#">
-									<%= t('label.sign_in') %>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+	
+	<%= render 'shared/header' %>
+	
 	<div id="main" role="main">
 		<%= yield :before_content %>
 		<div id="content">
@@ -41,16 +18,9 @@
 			</div>
 		</div>
 	</div>
-	<footer id="footer">
-		<div class="container">
-			<p class="pull-right">&copy; <%= Date.today.year %></p>
-			<ul class="pull-left horizontal">
-				<li><a href="#">Github</a></li>
-				<li class="muted"> | </li>
-				<li><a href="mailto:kekestudio@163.com"><%= t('layout.contact_us') %></a></li>
-			</ul>
-		</div>
-	</footer>
+	
+	<%= render 'shared/footer' %>
+	
 	<%= javascript_include_tag "application" %>
 	<%= yield :body_bottom %>
 </body>
