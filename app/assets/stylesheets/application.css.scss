@@ -1,6 +1,9 @@
 @import "0.variables";
 @import "bootstrap";
-@import "bootstrap-responsive";
+//@import "bootstrap-responsive";
+@import "bootstrap/responsive-utilities";
+@import "bootstrap/responsive-768px-979px";
+@import "bootstrap/responsive-767px-max";
 
 /* mixins */
 
@@ -12,6 +15,8 @@
 @import "4.themes";
 
 /* modules */
+
+@import "modules/user-bar";
 
 @import "modules/list";
 @import "modules/form";

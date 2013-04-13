@@ -1,14 +1,15 @@
 zh-CN:
   layout:
-    wenda: "法律问答"
+    title: "法律问答 - 您身边的法律社区"
+    opensource: "开源社区"
     contact_us: "联系我们"
+    wenda: "法律问问"
   
   label:
     sign_in: "登录"
     sign_up: "注册"
-    nickname: "昵称"
-    email_address: "Email 地址"
-    password: "密码"
+    login: "登录名"
+    password_with_forget_link_html: '密码 <small>(<a href=%{url}>忘记密码</a>)</small>'
   
   slogan:
     title: "专注法律方面的问答社区"
@@ -24,3 +25,9 @@ zh-CN:
     join_us:
       title: "欢迎加入我们"
       description: "也许你愿意和我们一起来搭建一个更好的平台，请加入法律问答"
+      
+  text:
+    under_construction: "网站建设中"
+    visit_github_html: "在 Github 上查看法律问答的<a href='%{url}'>最新进展</a>。"
+    index:
+      under_construction: test

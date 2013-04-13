@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LawWenda</title>
+  <title><%= t('layout.title') %></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<%= stylesheet_link_tag "application", media: "all" %>
   <%= csrf_meta_tags %>
@@ -9,8 +9,13 @@
 <body class="signed_out">
 	
 	<%= render 'shared/header' %>
-	
+  
 	<div id="main" role="main">
+    
+    <div class="container">
+      <%= render_flashes %>
+    </div>
+    
 		<%= yield :before_content %>
 		<div id="content">
 			<div class="container">

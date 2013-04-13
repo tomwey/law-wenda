@@ -6,12 +6,15 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'devise'
+gem 'settingslogic'
 
 group :development do
   gem 'sqlite3'
   
   # 关掉assets pipeline日志
   gem 'quiet_assets'
+  
+  gem 'thin'
 end
 
 # group :production do

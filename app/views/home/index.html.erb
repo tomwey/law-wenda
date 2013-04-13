@@ -1,41 +1,4 @@
-<% content_for :before_content do %>
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row-fluid">
-        <div class="span5">
-          <div class="slogan">
-            <h1><%= t('slogan.title') %></h1>
-            <p><%= t('slogan.description') %></p>
-          </div>
-        </div>
-        <div class="span5 offset2">
-          <form class="login">
-            <label><%= t('label.nickname') %></label>
-            <input type="text" placeholder="<%= t('label.nickname') %>" />
-            <label><%= t('label.email_address') %></label>
-            <input type="text" placeholder="<%= t('label.email_address') %>" />
-            <label><%= t('label.password') %></label>
-            <input type="password" placeholder="<%= t('label.password') %>" />
-            
-            <button class="btn" type="submit"><%= t('label.sign_up') %></button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-<% end %>
-
-<div class="row-fluid">
-  <div class="span3">
-    <h2><%= t('highlights.free.title') %></h2>
-    <p><%= t('highlights.free.description') %></p>
-  </div>
-  <div class="span3 offset1">
-    <h2><%= t('highlights.more_features.title') %></h2>
-    <p><%= t('highlights.more_features.description') %></p>
-  </div>
-  <div class="span3 offset1">
-    <h2><%= t('highlights.join_us.title') %></h2>
-    <p><%= t('highlights.join_us.description') %></p>
-  </div>
+<div class="hero-unit">
+  <h1><%= t('text.under_construction') %></h1>
+  <p><%= t('text.visit_github_html', :url => "https://github.com/tomwey/law-wenda") %></p>
 </div>

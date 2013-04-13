@@ -7,18 +7,12 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="#">
+				<a class="brand" href="/">
 					<span class="icon-wenda"></span>
 					<span><%= t('layout.wenda') %></span>
 				</a>
 				<div class="nav-collapse collapse">
-					<ul class="unstyled pull-right">
-						<li>
-							<a class="btn" href="#">
-								<%= t('label.sign_in') %>
-							</a>
-						</li>
-					</ul>
+					<%= render_user_bar %>
 				</div>
 			</div>
 		</div>
