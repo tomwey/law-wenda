@@ -1,9 +1,17 @@
 zh-CN:
   layout:
     title: "法律问答 - 您身边的法律社区"
-    opensource: "开源社区"
-    contact_us: "联系我们"
     wenda: "法律问问"
+    nav:
+      question: "问题"
+      category: "分类"
+      lawer: "律师"
+    header:
+      search: "输入关键字查找"
+    footer:
+      about: "关于"
+      feedback: "反馈"
+      weibo: "官方微博"
   
   label:
     sign_in: "登录"

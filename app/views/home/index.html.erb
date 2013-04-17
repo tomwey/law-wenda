@@ -1,4 +1,55 @@
-<div class="hero-unit">
-  <h1><%= t('text.under_construction') %></h1>
-  <p><%= t('text.visit_github_html', :url => "https://github.com/tomwey/law-wenda") %></p>
+<div class="row-fluid">
+  <div class="span9">
+    <!-- <h4 class="muted span4">所有问题</h4> -->
+    <div class="tabbable"> <!-- Only required for left/right tabs -->
+      <h3 class="pull-left muted">所有问题</h3>
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab1" data-toggle="tab">默认</a></li>
+        <li><a href="#tab2" data-toggle="tab">热门</a></li>
+        <li><a href="#tab2" data-toggle="tab">活跃</a></li>
+        <li><a href="#tab2" data-toggle="tab">没有回答</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <div class="questions">
+            <div class="question-line">
+              
+            </div>
+          </div>
+          
+          <div class="pagination">
+            <ul>
+              <li><a href="#">Prev</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="tab-pane" id="tab2">
+          <p>Howdy, I'm in Section 2.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="span3">
+    <a href="#" class="btn btn-info btn-block btn-large">提问</a>
+    <h2 class="muted">6,000,000</h2>
+    <section>
+      <h4 class="muted">所有类别</h4>
+      <div class="well">
+        <a class="label label-info">婚姻</a>
+        <a class="label label-info">继承</a>
+        <a class="label label-info">遗产</a>
+        <a class="label label-info">房地产</a>
+        <a class="label label-info">人事</a>
+        <a class="label label-info">刑事诉讼</a>
+        <a class="label label-info">宪法</a>
+      </div>
+    </section>
+  </div>
 </div>
