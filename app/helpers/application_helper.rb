@@ -1,3 +1,4 @@
+# coding: utf-8
 module ApplicationHelper
   def resource_name
     :user
@@ -11,6 +12,11 @@ module ApplicationHelper
     @devise_mapping ||= Devise.mappings[:user]
   end
   
+  def admin?(user = nil)
+    user ||= current_user
+    user.try(:admin?)
+  end
+  
   def render_close_icon(dismiss = 'alert')
     link_to '&times;'.html_safe, '#', :class => 'close', 'data-dismiss' => dismiss
   end
@@ -19,25 +25,17 @@ module ApplicationHelper
     flash_key == :notice ? 'alert-success' : "alert-#{flash_key}"
   end
   
-  def body_attributes
-    {
-      :class => user_signed_in? ? 'signed_in' : 'signed_out'
-    }
-  end
-  
-  def render_user_bar
-    if user_signed_in?
-      render 'signed_in_user_bar'
-    else
-      render 'signed_out_user_bar'
-    end
-  end
-  
   def render_flashes
-    unless @_flashes_rendered
-      @_flashes_rendered = true
-      render 'flashes'
+    flash_messages = []
+
+    flash.each do |type, message|
+      type = :success if type == :notice
+      text = content_tag(:div, link_to("x", "#", :class => "close", 'data-dismiss' => "alert") + message, :class => "alert alert-#{type}")
+      flash_messages << text if message
     end
+
+    flash_messages.join("\n").html_safe
+    
   end
   
 end

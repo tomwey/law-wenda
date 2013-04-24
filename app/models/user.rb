@@ -10,4 +10,9 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   
   validates :login, presence: true, uniqueness: { case_sensitive: false }, format: { with: /[a-zA-Z0-9_]+/ }
+
+  
+  def admin?
+    Settings.admin_emails.include?(self.email)
+  end
 end

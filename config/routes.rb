@@ -1,5 +1,12 @@
 LawWenda::Application.routes.draw do
-  devise_for :users
+  get "users/index"
+
+  get "users/show"
+
+  devise_for :users, :path => "account", :controllers => {
+    :registrations => :account,
+    :sessions => :sessions
+  }
 
   root to: 'home#index'
   # authenticated :user do
@@ -9,5 +16,12 @@ LawWenda::Application.routes.draw do
   # as :user do
   #   root to: 'devise/registrations#new'
   # end
+  
+  match :users, :to => "users#index", :as => :users
+  resources :users, :path => "" do
+    member do
+      
+    end
+  end
   
 end

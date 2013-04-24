@@ -7,5 +7,6 @@ zh-CN:
         login: "登录名"
         email: "邮箱地址"
         password: "密码"
+        password_confirmation: "确认密码"
         remember_me: "记住我"
         

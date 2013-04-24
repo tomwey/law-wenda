@@ -13,9 +13,15 @@ zh-CN:
       feedback: "反馈"
       weibo: "官方微博"
   
+  menu:
+    my_home_page: "我的主页"
+    edit_account_path: "个人资料设置"
+    cpanel: "管理员后台"
+  
   label:
     sign_in: "登录"
     sign_up: "注册"
+    logout: "退出"
     login: "登录名"
     password_with_forget_link_html: '密码 <small>(<a href=%{url}>忘记密码</a>)</small>'
   

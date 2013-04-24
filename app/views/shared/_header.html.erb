@@ -3,8 +3,18 @@
     <div class="row-fluid">
       <div class="span12">
         <div class="pull-right">
-          <a href="#" class="muted"><%= t('label.sign_in') %></a>
-          <a href="#" class="muted"><%= t('label.sign_up') %></a>
+          <% if user_signed_in? %>
+          欢迎<%= current_user.login %> | 
+            <%= link_to t('menu.my_home_page'), user_path(current_user.login) %> | 
+            <%= link_to t('menu.edit_account_path'), edit_user_registration_path %> | 
+            <% if admin? %>
+              <%= link_to t('menu.cpanel'), "/cpanel" %> | 
+            <% end %>
+            <%= link_to t('label.logout'), destroy_user_session_path, :method => :delete %>
+          <% else %>
+            <%= link_to t('label.sign_in'), new_user_session_path, class: 'muted' %>
+            <%= link_to t('label.sign_up'), new_user_registration_path, class: 'muted' %>
+          <% end %>
         </div>
       </div>
     </div>
