@@ -7,7 +7,7 @@ Devise.setup do |config|
   config.mailer_sender = Settings.email_sender
 
   # Configure the class responsible to send e-mails.
-  config.mailer = "Devise::Async::Proxy"#"Devise::Mailer"
+  config.mailer = "Devise::Mailer"#"Devise::Async::Proxy"
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
@@ -111,7 +111,8 @@ Devise.setup do |config|
 
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
-  # config.remember_for = 2.weeks
+  # 两周内自动登录
+  config.remember_for = 2.weeks
 
   # If true, extends the user's remember period when remembered via cookie.
   # config.extend_remember_period = false

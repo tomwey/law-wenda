@@ -13,6 +13,12 @@ zh-CN:
       feedback: "反馈"
       weibo: "官方微博"
   
+  common:
+    submitting: "正在提交..."
+    login: "登录"
+    register: "注册"
+    forget_password: "忘记了密码"
+  
   menu:
     my_home_page: "我的主页"
     edit_account_path: "个人资料设置"
