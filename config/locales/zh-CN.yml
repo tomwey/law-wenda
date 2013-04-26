@@ -18,6 +18,9 @@ zh-CN:
     edit_account_path: "个人资料设置"
     cpanel: "管理员后台"
   
+  mail:
+    welcome_subject: "欢迎加入 %{app_name}"
+  
   label:
     sign_in: "登录"
     sign_up: "注册"
