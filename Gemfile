@@ -12,6 +12,11 @@ gem 'settingslogic'
 
 gem 'sidekiq'
 
+# gem 'simple_form', :git => "git://github.com/plataformatec/simple_form.git"
+# gem "anjlab-bootstrap-rails", :git => "git://github.com/anjlab/bootstrap-rails.git", :require => "bootstrap-rails"
+# gem "bootstrap_helper"
+# gem "airbrake"
+
 
 group :development do
   gem 'sqlite3'
