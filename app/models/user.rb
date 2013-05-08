@@ -22,6 +22,15 @@ class User < ActiveRecord::Base
     UserMailer.delay.welcome(self.id)
   end
   
+  # 重新生成 Private Token
+  def update_private_token
+    random_key = "#{SecureRandom.hex(10)}:#{self.id}"
+    self.update_attribute(:private_token, random_key)
+  end
+  
+  def ensure_private_token!
+    self.update_private_token if self.private_token.blank?
+  end
   # def to_param
   #   "#{id}-#{login}"
   # end

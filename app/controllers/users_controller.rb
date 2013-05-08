@@ -9,6 +9,11 @@ class UsersController < ApplicationController
   def show
   end
   
+  def update_private_token
+    current_user.update_private_token
+    render :text => current_user.private_token
+  end
+  
   protected
   def find_user
     # 处理 login 有大写字母的情况

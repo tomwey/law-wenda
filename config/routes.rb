@@ -7,6 +7,8 @@ LawWenda::Application.routes.draw do
     :registrations => :account,
     :sessions => :sessions
   }
+  
+  match 'account/update_private_token', to: 'users#update_private_token', via: :post, as: :update_private_token_account
 
   root to: 'home#index'
   # authenticated :user do

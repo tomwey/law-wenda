@@ -1,29 +1,79 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<div class="row-fluid">
+  <div class="span8 well">
+    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, class:"form-horizontal" }) do |f| %>
+      
+      <%= render "shared/error_messages", :target => resource %>
+      
+      <fieldset>
+        <legend>个人资料设置</legend>
+        
+        <div class="control-group">
+          <%= f.label :email, "邮箱", :class => 'control-label' %>
+          <div class="controls">
+            <%= f.email_field :email, :autofocus => true, :readonly => true %>
+          </div>
+        </div>
+        
+        <!-- <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+        <% end %> -->
+        
+          <div class="control-group">
+            <%= f.label :current_password, "旧密码", :class => "control-label" %>
+            <div class="controls">
+              <%= f.password_field :current_password %>
+            </div>
+          </div>
+        
+        <div class="control-group">
+          <%= f.label :password, :class => "control-label" %>
+          <div class="controls">
+            <%= f.password_field :password, :autocomplete => "off" %>
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <%= f.label :password_confirmation, :class => "control-label" %>
+          <div class="controls">
+            <%= f.password_field :password_confirmation %>
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <div class="controls">
+            <%= f.submit "修改密码", class: "btn btn-success" %>
+          </div>
+        </div>
+        
+      </fieldset>
+      
+    <% end %>
+  </div>
+  <div class="span4">
+    <div class="well">
+      <h4>密钥</h4>
+      <div>
+        <div><textarea id="private_token" style="width:190px;height:20px;cursor:default;" readonly="readonly"><%= @user.private_token %></textarea></div>
+        <div class="buttons">
+          <a href="#" class="btn" id="update_private_token">更换一个</a> <span class="help-inline">用于三方应用验证</span>
+        </div>
+      </div>
+    </div>
+    <div class="well">
+      <p>不喜欢? <%= link_to "删除此账号", registration_path(resource_name), :method => :delete, confirm: '删除后不能恢复，确定要删除吗？', class: "btn btn-danger" %></p>
+    </div>
+  </div>
+</div>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-  <%= f.password_field :password, :autocomplete => "off" %></div>
-
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
-
-  <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-  <%= f.password_field :current_password %></div>
-
-  <div><%= f.submit "Update" %></div>
+<% content_for :scripts do %>
+ <script type="text/javascript">
+  $(document).ready(function(){
+    $('#update_private_token').click(function(e){
+      e.preventDefault();
+      $.post("<%= update_private_token_account_path %>", function(re) {
+        $('#private_token').val(re);
+      });
+    });
+  });
+  </script>
 <% end %>
-
-<h3>Cancel my account</h3>
-
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete %>.</p>
-
-<%= link_to "Back", :back %>
