@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= t('layout.title') %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<%= stylesheet_link_tag "application", media: "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+  <% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+  <% end %>
+  
+	<div id="main" role="main">    
+    
+		<div id="content">
+			<div class="container">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+	
+	<%= render 'shared/footer' %>
+	
+	<%= javascript_include_tag "application" %>
+	<%= yield :body_bottom %>
+</body>
+</html>

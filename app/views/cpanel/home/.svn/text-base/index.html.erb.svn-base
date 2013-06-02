@@ -1,0 +1,23 @@
+<% content_for :sitemap do %>
+  <span class="current">概览</span>
+<% end %>
+
+<% if !@recent_questions.blank? %>
+<div class="group">
+  <h2>最近问题</h2>
+  <ul>
+    <% @recent_questions.each do |item| %>
+    <li><a href="<%= edit_cpanel_question_path(item) %>"><%= truncate(item.title,:length => 50) %></a></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div class="group">
+  <h2>统计信息</h2>
+  <ul>
+        <li>普通用户: <%= User.member.count %> 人</li>
+        <li>律师: <%= User.lawer.count %> 人</li>
+        <li>问题: <%= Question.count %> 个</li>
+  </ul>
+</div>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  location: MyString
+  practiceno: MyString
+  law_firm: MyString
+  description: MyText
+
+two:
+  location: MyString
+  practiceno: MyString
+  law_firm: MyString
+  description: MyText

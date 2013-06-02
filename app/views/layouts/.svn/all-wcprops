@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/law_wenda/!svn/ver/23/law-wenda/app/views/layouts
+END
+mailer.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/law_wenda/!svn/ver/1/law-wenda/app/views/layouts/mailer.html.erb
+END
+account.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/law_wenda/!svn/ver/1/law-wenda/app/views/layouts/account.html.erb
+END
+cpanel.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/law_wenda/!svn/ver/23/law-wenda/app/views/layouts/cpanel.html.erb
+END
+application.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/law_wenda/!svn/ver/17/law-wenda/app/views/layouts/application.html.erb
+END

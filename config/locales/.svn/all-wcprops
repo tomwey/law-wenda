@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/law_wenda/!svn/ver/25/law-wenda/config/locales
+END
+zh-CN.yml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/law_wenda/!svn/ver/17/law-wenda/config/locales/zh-CN.yml
+END
+users.zh-CN.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/law_wenda/!svn/ver/21/law-wenda/config/locales/users.zh-CN.yml
+END
+devise.en.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/law_wenda/!svn/ver/1/law-wenda/config/locales/devise.en.yml
+END
+cpanel.zh-CN.yml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/law_wenda/!svn/ver/23/law-wenda/config/locales/cpanel.zh-CN.yml
+END
+en.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/law_wenda/!svn/ver/1/law-wenda/config/locales/en.yml
+END
+menu.zh-CN.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/law_wenda/!svn/ver/1/law-wenda/config/locales/menu.zh-CN.yml
+END
+common.zh-CN.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/law_wenda/!svn/ver/1/law-wenda/config/locales/common.zh-CN.yml
+END
+activerecord.zh-CN.yml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/law_wenda/!svn/ver/26/law-wenda/config/locales/activerecord.zh-CN.yml
+END
+rails.zh-CN.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/law_wenda/!svn/ver/1/law-wenda/config/locales/rails.zh-CN.yml
+END
+devise.zh-CN.yml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/law_wenda/!svn/ver/1/law-wenda/config/locales/devise.zh-CN.yml
+END
+simple_form.en.yml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/law_wenda/!svn/ver/9/law-wenda/config/locales/simple_form.en.yml
+END
+will_paginate.zh-CN.yml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/law_wenda/!svn/ver/25/law-wenda/config/locales/will_paginate.zh-CN.yml
+END

@@ -1,0 +1,36 @@
+<% content_for :sitemap do %>
+  <span class="current">回答</span>
+<% end %>
+
+<h1>回答列表</h1>
+
+<table class="grid">
+  <tr class="head">
+    <td class="first">ID</td>
+    <td style="width:500px">Body</td>
+    <td>Question</td>
+    <td>User</td>
+    <td>At</td>
+
+    <td></td>
+  </tr>
+
+<% @answers.each do |answer| %>
+  <tr>
+    <td class="first"><%= answer.id %></td>
+    <td><%= truncate(answer.body, :length => 50) %></td>
+    <% if answer.question %>
+      <td>
+          <%= link_to(answer.question_id, cpanel_question_path(answer.question_id), :title => answer.question.title)%>
+          </td>
+      <% else %>
+      <td><%= answer.question_id %></td>
+      <% end %>
+    <td><%= answer.user.login if answer.user %></td>
+    <td><%= l answer.created_at, :format => :short %></td>
+    <td><%= link_to "编辑", edit_cpanel_answer_path(answer) %>
+    <%= link_to "删除", cpanel_answer_path(answer), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @answers %>

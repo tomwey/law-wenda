@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/law_wenda/!svn/ver/24/law-wenda/db
+END
+schema.rb
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/law_wenda/!svn/ver/28/law-wenda/db/schema.rb
+END
+test.sqlite3
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/law_wenda/!svn/ver/1/law-wenda/db/test.sqlite3
+END
+development.sqlite3
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/law_wenda/!svn/ver/30/law-wenda/db/development.sqlite3
+END
+seeds.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/law_wenda/!svn/ver/26/law-wenda/db/seeds.rb
+END
+production.sqlite3
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/law_wenda/!svn/ver/1/law-wenda/db/production.sqlite3
+END

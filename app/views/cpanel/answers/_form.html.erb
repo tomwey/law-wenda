@@ -1,0 +1,9 @@
+<%= simple_form_for [:cpanel, @answer] do |f| %>
+  <%= render 'shared/error_messages', :target => @answer %>
+  
+  <%= f.input :body, :as => :text, :input_html => { :class => "span6", :style => "height: 300px" } %>
+  <%= f.label :user_id, "用户" %>
+  <%= f.text_field :user_id %> <%= @answer.user.login %><br />
+  <%= f.submit "保存", :class => "btn btn-primary", :disable_with => t("common.submitting") %>
+  <%= link_to 'Back', cpanel_answers_path %>
+<% end %>

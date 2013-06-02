@@ -1,0 +1,6 @@
+<% content_for :sitemap do %>
+  <span class="current">新建问题</span>
+<% end %>
+
+<h2>新建问题</h2>
+<%= render 'form' %>

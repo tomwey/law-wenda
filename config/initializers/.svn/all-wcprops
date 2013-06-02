@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/law_wenda/!svn/ver/17/law-wenda/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/law_wenda/!svn/ver/1/law-wenda/config/initializers/inflections.rb
+END
+devise.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/law_wenda/!svn/ver/1/law-wenda/config/initializers/devise.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/law_wenda/!svn/ver/1/law-wenda/config/initializers/session_store.rb
+END
+setup_locale.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/law_wenda/!svn/ver/1/law-wenda/config/initializers/setup_locale.rb
+END
+reload_api.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/law_wenda/!svn/ver/17/law-wenda/config/initializers/reload_api.rb
+END
+setup_mail.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/law_wenda/!svn/ver/1/law-wenda/config/initializers/setup_mail.rb
+END
+secret_token.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/law_wenda/!svn/ver/1/law-wenda/config/initializers/secret_token.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/law_wenda/!svn/ver/1/law-wenda/config/initializers/backtrace_silencers.rb
+END
+simple_form_bootstrap.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/law_wenda/!svn/ver/9/law-wenda/config/initializers/simple_form_bootstrap.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/law_wenda/!svn/ver/1/law-wenda/config/initializers/mime_types.rb
+END
+devise_async.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/law_wenda/!svn/ver/1/law-wenda/config/initializers/devise_async.rb
+END
+wrap_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/law_wenda/!svn/ver/1/law-wenda/config/initializers/wrap_parameters.rb
+END
+simple_form.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/law_wenda/!svn/ver/9/law-wenda/config/initializers/simple_form.rb
+END

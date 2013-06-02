@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/law_wenda/!svn/ver/20/law-wenda/app/uploaders
+END
+photo_uploader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/law_wenda/!svn/ver/20/law-wenda/app/uploaders/photo_uploader.rb
+END
+base_uploader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/law_wenda/!svn/ver/20/law-wenda/app/uploaders/base_uploader.rb
+END
+avatar_uploader.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/law_wenda/!svn/ver/20/law-wenda/app/uploaders/avatar_uploader.rb
+END

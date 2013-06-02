@@ -1,0 +1,24 @@
+# coding: utf-8
+defaults: &defaults
+  app_name: "法律问问"
+  time_zone: 'Beijing'
+  default_locale: 'zh-CN'
+  domain: 'localhost:3000'
+  
+  admin_emails:
+    - "tomwey@163.com"
+  email_sender: "wmarshx@gmail.com"
+  email_password: "Tomwey986918"
+  
+  user_roles: 
+    - "用户"
+    - "律师"
+
+development:
+  <<: *defaults
+  
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

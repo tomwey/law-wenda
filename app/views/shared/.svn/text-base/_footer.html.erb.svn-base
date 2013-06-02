@@ -1,0 +1,11 @@
+<footer id="footer">
+	<div class="container">
+		<ul class="pull-left horizontal">
+			<li><a href="#" class="muted"><%= t('layout.footer.about') %></a></li>
+			<li class="muted"> | </li>
+      <li><a href="#" class="muted"><%= t('layout.footer.feedback') %></a></li>
+      <li class="muted"> | </li>
+			<li><a href="#" class="muted"><%= t('layout.footer.weibo') %></a></li>
+		</ul>
+	</div>
+</footer>

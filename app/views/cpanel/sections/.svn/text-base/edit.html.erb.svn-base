@@ -1,0 +1,7 @@
+<% content_for :sitemap do %>
+  <span class="current">更新分类</span>
+<% end %>
+
+<h2>更新分类</h2>
+
+<%= render 'form' %>

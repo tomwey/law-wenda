@@ -1,0 +1,37 @@
+<% content_for :sitemap do %>
+  <span class="current">问题</span>
+<% end %>
+
+<h2>问题列表</h2>
+
+<table class="grid">
+  <tr class="head">
+    <td class="first">ID</td>
+    <td style="width:300px">Title</td>
+    <td>Node</td>
+    <td>User</td>
+    <td>Answers</td>
+    <td>at</td>
+    <td style="width:140px"></td>
+  </tr>
+
+<% @questions.each do |question| %>
+  <tr>
+    <td class="first" width="5%"><%= question.id %></td>
+    <td><%= truncate(question.title,:length => 30) %></td>
+    <td width="10%"><%= question.node.name if question.node %></td>
+    <td width="10%"><%= question.user.login if question.user %></td>
+    <td width="8%"><%= question.answers_count %></td>
+    <td><%= l question.created_at,:format => :short %></td>
+    <td>
+      <%= link_to t("common.edit"), edit_cpanel_question_path(question) %>
+      <%= link_to t("common.delete"), cpanel_question_path(question), :confirm => 'Are you sure?', :method => :delete %>
+      <%# TODO: list deleted topics in Trash Can, and restore it from there %>
+    </td>
+      
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @questions %>
+
+<%= link_to 'New Question', new_cpanel_question_path %>

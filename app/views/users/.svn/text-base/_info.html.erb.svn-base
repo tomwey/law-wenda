@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="pull-right">
+    <div style="text-align:center;">
+      <%= user_avatar_tag(@user,120, :link => false) %>
+    </div>
+  </div>
+
+  <div class="userinfo span6">
+    <ul>
+        <% if @user.location.present? %>
+             <li><span>城市:</span><%= render_user_location(@user) %></li>
+        <% end %>
+
+        <li><span>加入时间:</span><%= render_user_join_time(@user) %></li>
+
+        <% if @user.profile %>
+        
+          <li><span>专长领域:</span><%= @user.profile.try(:profession) %></li>
+        
+        <% end %>
+        
+    </ul>
+  </div>
+
+
+</div>

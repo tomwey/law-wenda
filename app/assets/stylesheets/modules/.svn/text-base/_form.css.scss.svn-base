@@ -1,0 +1,21 @@
+form {
+  
+  &.form-full-width{
+    .uneditable-input,
+    select,
+    textarea,
+    input {
+      @include input-block-level;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+      display: inline-block;
+      width: auto;
+      min-height: auto;
+    }
+    .btn {
+      @extend .btn-block;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+10
+
+dir
+25
+http://t.svnchina.com/svn/law_wenda/law-wenda/app
+http://t.svnchina.com/svn/law_wenda
+
+
+
+2013-05-19T16:18:28.334987Z
+25
+tomwey
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+03744e7f-1506-4968-84cf-b4c643701db3
+
+assets
+dir
+
+helpers
+dir
+
+models
+dir
+
+controllers
+dir
+
+api
+dir
+
+mailers
+dir
+
+views
+dir
+
+uploaders
+dir
+

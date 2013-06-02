@@ -1,0 +1,32 @@
+<% content_for :sitemap do %>
+	<span class="current">节点</span>
+<% end %>
+
+<h1>节点列表</h1>
+
+<table class="grid">
+  <tr class="head">
+    <td class="first">ID</td>
+    <td>Name</td>
+    <td>Section</td>
+    <td>Sort</td>
+    <td>Questions count</td>
+    <td></td>
+  </tr>
+
+<% @nodes.each do |node| %>
+  <tr>
+    <td class="first" width="8%"><%= node.id %></td>
+    <td width="15%"><%= node.name %></td>
+    <td><%= node.section.name %></td>
+    <td width="8%"><%= node.sort %></td>
+    <td><%= node.questions_count %></td>
+    <td><%= link_to 'Edit', edit_cpanel_node_path(node) %>
+    <%= link_to 'Destroy', cpanel_node_path(node), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Node', new_cpanel_node_path %>

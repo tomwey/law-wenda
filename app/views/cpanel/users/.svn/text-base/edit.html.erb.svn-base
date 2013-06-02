@@ -1,0 +1,6 @@
+<% content_for :sitemap do %>
+  <a href="<%= cpanel_users_path %>">用户</a> &gt; <span class="current">更新用户资料</span>
+<% end %>
+
+<h2>更新用户</h2>
+<%= render 'form' %>

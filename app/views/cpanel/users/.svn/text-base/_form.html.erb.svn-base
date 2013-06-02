@@ -1,0 +1,40 @@
+<%= simple_form_for([:cpanel, @user], :html => { :enctype => "multipart/form-data", 
+                                                 :method  => :put, 
+                                                 :class   => "form-horizontal" }) do |f| %>
+
+  <%= render "shared/error_messages", :target => @user %>
+
+  <fieldset>
+    <legend></legend>
+
+    
+    <%= f.input :login %>
+    <%= f.input :avatar %>
+    
+    <div class="control-group">
+      <%= f.label :email, "邮箱", :class => 'control-label' %>
+      <div class="controls">
+        <%= f.email_field :email, :autofocus => true, :readonly => true %>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <%= f.label :verified, :class => "control-label" %>
+      <div class="controls">
+        <%= f.check_box :verified, :class => "checkbox" %>
+        <span class="help-inline">信任用户将可以回答问题</span>
+      </div>
+    </div>
+
+    <%= render('users/profile_form', :f => f) if @user.lawer? %>
+    
+
+    <div class="control-group">
+      <div class="controls">
+        <%= f.submit "保存", class: "btn btn-primary",:disable_with => t('common.submitting') %>
+      </div>
+    </div>
+
+  </fieldset>
+
+<% end %>

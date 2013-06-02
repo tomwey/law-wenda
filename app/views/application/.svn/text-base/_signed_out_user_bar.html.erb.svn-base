@@ -1,0 +1,5 @@
+<ul class="user-bar pull-right">
+  <li>
+    <%= link_to t('label.sign_in'), new_user_session_path, class:'btn' %>
+  </li>
+</ul>

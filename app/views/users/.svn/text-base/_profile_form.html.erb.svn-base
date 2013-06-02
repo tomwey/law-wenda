@@ -1,0 +1,45 @@
+<%= f.fields_for :profile do |profile_form| %>
+  <%= profile_form.hidden_field :_role, :class => 'profile_role', :value => f.object.role %>
+  <div class="control-group">
+    <%= profile_form.label :practiceno, :class => "control-label" %>
+    <div class="controls">
+      <%= profile_form.text_field :practiceno, :placeholder => profile_form.object.class.human_attribute_name(:practiceno) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= profile_form.label :law_firm, :class => "control-label" %>
+    <div class="controls">
+      <%= profile_form.text_field :law_firm, :placeholder => profile_form.object.class.human_attribute_name(:law_firm) %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= profile_form.label :location, :class => "control-label" %>
+    <div class="controls">
+      <%= profile_form.text_field :location, :placeholder => profile_form.object.class.human_attribute_name(:location) %>
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <%= profile_form.label :profession, :class => "control-label" %>
+    
+    <div class="controls professions">
+      <% Section.all_sections.each do |section| %>
+        <div class="profession-item">
+          <h2><%= section.name %></h2>
+          <div>
+            <% section.nodes.each_with_index do |node, index| %>
+              <%= render_check_box_for_profile('user[profile_attributes][nodes][]', f.object.profile, node.name, index) %> 
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  
+  <div class="control-group">
+    <%= profile_form.label :description, :class => "control-label" %>
+    <div class="controls">
+      <%= profile_form.text_area :description, :size => "60x10" %>
+    </div>
+  </div>
+<% end %>
