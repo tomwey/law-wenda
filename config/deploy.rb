@@ -2,7 +2,7 @@ require "bundler/capistrano"
 
 server "198.199.107.191", :web, :app, :db, primary: true
 
-set :application, "law_wenda"
+set :application, "law-wenda"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
