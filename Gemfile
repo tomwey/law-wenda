@@ -40,9 +40,9 @@ group :development do
   gem 'thin'
 end
 
-# group :production do
-#   gem 'mysql2'
-# end
+group :production do
+  gem 'pg'
+end
 
 
 # Gems used only for assets and not required
@@ -68,10 +68,10 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
