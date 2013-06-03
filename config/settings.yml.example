@@ -1,0 +1,24 @@
+# coding: utf-8
+defaults: &defaults
+  app_name: "法律问问"
+  time_zone: 'Beijing'
+  default_locale: 'zh-CN'
+  domain: ''
+  
+  admin_emails:
+    - ""
+  email_sender: ""
+  email_password: ""
+  
+  user_roles: 
+    - ""
+    - ""
+
+development:
+  <<: *defaults
+  
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
