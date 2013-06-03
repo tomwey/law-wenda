@@ -1,5 +1,5 @@
 production:
-  adapter: progresql
+  adapter: postgresql
   encoding: unicode
   database: law_wenda
   pool: 5
