@@ -65,7 +65,7 @@ module UsersHelper
   end
   
   def render_user_location(user)
-    ""
+    user.location
   end
   
   def render_user_join_time(user)

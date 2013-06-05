@@ -25,8 +25,8 @@ class User < ActiveRecord::Base
   
   mount_uploader :avatar, AvatarUploader
   
-  scope :member, where('role = "用户"')
-  scope :lawer, where('role = "律师"')
+  scope :member, where(:role => '用户')
+  scope :lawer, where(:role => '律师')
   
   delegate :location, :to => :profile, :allow_nil => true
   
