@@ -8,7 +8,11 @@ LawWenda::Application.routes.draw do
   }
   
   match 'account/update_private_token', to: 'users#update_private_token', via: :post, as: :update_private_token_account
-
+  
+  resources :nodes
+  
+  match "questions/node:id" => "questions#node", :as => :node_questions
+  
   resources :questions do
     collection do
       get :hot
@@ -30,7 +34,7 @@ LawWenda::Application.routes.draw do
     
   end
 
-  root to: 'home#index'
+  root to: 'questions#index'
   # authenticated :user do
   #   root to: 'home#index'
   # end

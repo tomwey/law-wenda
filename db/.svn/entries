@@ -1,14 +1,14 @@
 10
 
 dir
-25
+37
 http://t.svnchina.com/svn/law_wenda/law-wenda/db
 http://t.svnchina.com/svn/law_wenda
 
 
 
-2013-05-19T16:17:25.367884Z
-24
+2013-07-01T15:29:51.529603Z
+37
 tomwey
 
 
@@ -28,7 +28,7 @@ tomwey
 
 schema.rb
 file
-28
+
 
 
 
@@ -96,14 +96,14 @@ tomwey
 
 development.sqlite3
 file
-30
 
 
 
-2013-05-23T14:51:39.000000Z
-1bb2af4ed9263e5ad79ce1efa7fca978
-2013-05-23T15:45:09.996094Z
-30
+
+2013-07-01T15:22:59.000000Z
+e7ad1464baa2a83cc432bcd4b1a76cb1
+2013-07-01T15:29:51.529603Z
+37
 tomwey
 has-props
 
@@ -130,14 +130,14 @@ has-props
 
 seeds.rb
 file
-26
 
 
 
-2013-05-23T12:31:47.000000Z
-eb2fcead856d5e5357769170d8ee12c1
-2013-05-22T11:24:57.116867Z
-26
+
+2013-06-03T16:36:39.000000Z
+a7ea90097cb7ec46cbb07b469fb1671c
+2013-06-24T15:13:49.873674Z
+32
 tomwey
 
 
@@ -160,7 +160,7 @@ tomwey
 
 
 
-2986
+2652
 
 migrate
 dir

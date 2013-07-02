@@ -1,19 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 47
-/svn/law_wenda/!svn/ver/24/law-wenda/app/models
+/svn/law_wenda/!svn/ver/33/law-wenda/app/models
 END
 user.rb
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/law_wenda/!svn/ver/28/law-wenda/app/models/user.rb
+/svn/law_wenda/!svn/ver/33/law-wenda/app/models/user.rb
 END
 answer.rb
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/svn/law_wenda/!svn/ver/29/law-wenda/app/models/answer.rb
+/svn/law_wenda/!svn/ver/33/law-wenda/app/models/answer.rb
 END
 settings.rb
 K 25
@@ -49,7 +49,7 @@ question.rb
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svn/law_wenda/!svn/ver/28/law-wenda/app/models/question.rb
+/svn/law_wenda/!svn/ver/33/law-wenda/app/models/question.rb
 END
 site_config.rb
 K 25

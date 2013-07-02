@@ -1,49 +1,50 @@
 <div class="row-fluid">
   <div class="span9">
-    <!-- <h4 class="muted span4">所有问题</h4> -->
-    <div class="tabbable"> <!-- Only required for left/right tabs -->
-      <h3 class="pull-left muted">所有问题</h3>
-      <ul class="nav nav-tabs">
-        <!-- <li class="active"><a href="<%= questions_path %>" data-toggle="tab">默认</a></li>
-        <li><a href="<%= hot_questions_path %>" data-toggle="tab">热门</a></li>
-        <li><a href="<%= activity_questions_path %>" data-toggle="tab">活跃</a></li>
-        <li><a href="<%= no_answer_questions_path %>" data-toggle="tab">没有回答</a></li> -->
-          <li class="active"><%= link_to "默认", questions_path, 'data-toggle' => 'tab' %></li>
-          <li><%= link_to "热门", hot_questions_path, 'data-toggle' => 'tab' %></li>
-          <li><%= link_to "活跃", activity_questions_path, 'data-toggle' => 'tab' %></li>
-          <li><%= link_to "没有回答", no_answer_questions_path, 'data-toggle' => 'tab' %></li>
-      </ul>
-      <div class="tab-content">
-        <div class="tab-pane active" id="tab1">
-          <div class="questions">
-            <% 5.times do %>
-            <div class="question-line">
-              <br>test<br>
+    <div class="box">
+      <%= render "menu" %>
+      <div class="questions">
+        <% @questions.each do |question| %>
+          <div class="question question-line">
+            <div class="avatar pull-left">
+              <%= user_avatar_tag(question.user,:normal) %>
             </div>
-            <% end %>
+            <div class="right-info">
+              <div class="pull-right answers">
+                <% if question.answers_count > 0 %>
+                  <% read_state = current_user.try(:question_read?,question) %>
+                  <%= link_to(question.answers_count,question_path(question)+"#answer#{question.answers_count}",
+                    :class => "count state_#{read_state || false}"
+                  )%>
+                <% end %>
+              </div>
+              <div class="infos">
+                <div class="title">
+                  <%= link_to(truncate(question.title, :length => 100), question_path(question), :title => question.title) %>
+                </div>
+                <div class="info">
+                  <% if action_name != "node" %>
+                  <%= render_node_name(question.node) %>
+                  •
+                  <% end %>
+                  <%= user_name_tag(question.user) %>
+                  <em>
+                    •
+                    <% if question.last_answer.blank? %>
+                      <%= raw t("common.created_at", :time => timeago(question.created_at))%>
+                    <% else %>
+                      <%= t("common.last_by")%> <%= user_name_tag(question.last_answer.user) %> <%= raw t("common.reply_at", :time => timeago(question.answered_at))%>
+                    <% end %>
+                  </em>
+                </div>
+              </div>
+            </div>
           </div>
-          
-        </div>
-        <div class="tab-pane" id="tab2">
-          <p>Howdy, I'm in Section 2.</p>
-        </div>
+        <% end %>
       </div>
+      <%= will_paginate @questions %>
     </div>
   </div>
   <div class="span3">
-    <a href="#" class="btn btn-info btn-block btn-large">提问</a>
-    <h2 class="muted">6,000,000</h2>
-    <section>
-      <h4 class="muted">所有类别</h4>
-      <div class="well">
-        <a class="label label-info">婚姻</a>
-        <a class="label label-info">继承</a>
-        <a class="label label-info">遗产</a>
-        <a class="label label-info">房地产</a>
-        <a class="label label-info">人事</a>
-        <a class="label label-info">刑事诉讼</a>
-        <a class="label label-info">宪法</a>
-      </div>
-    </section>
+    <%= render "sidebar" %>
   </div>
 </div>

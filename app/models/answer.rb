@@ -4,6 +4,8 @@ class Answer < ActiveRecord::Base
   belongs_to :question, counter_cache: true, :inverse_of => :answers
   belongs_to :user, counter_cache: true, :inverse_of => :answers
   
+  delegate :login, :to => :user, :prefix => true
+  
   attr_protected :user_id, :question_id
   
   validates_presence_of :body

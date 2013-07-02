@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/law_wenda/!svn/ver/25/law-wenda/app/controllers
+/svn/law_wenda/!svn/ver/36/law-wenda/app/controllers
 END
 questions_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svn/law_wenda/!svn/ver/31/law-wenda/app/controllers/questions_controller.rb
+/svn/law_wenda/!svn/ver/36/law-wenda/app/controllers/questions_controller.rb
 END
 account_controller.rb
 K 25

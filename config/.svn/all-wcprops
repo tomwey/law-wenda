@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 43
-/svn/law_wenda/!svn/ver/25/law-wenda/config
+/svn/law_wenda/!svn/ver/33/law-wenda/config
 END
 settings.yml
 K 25
@@ -13,19 +13,19 @@ routes.rb
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/svn/law_wenda/!svn/ver/30/law-wenda/config/routes.rb
+/svn/law_wenda/!svn/ver/33/law-wenda/config/routes.rb
 END
 database.yml
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/svn/law_wenda/!svn/ver/1/law-wenda/config/database.yml
+V 56
+/svn/law_wenda/!svn/ver/32/law-wenda/config/database.yml
 END
 application.rb
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/svn/law_wenda/!svn/ver/17/law-wenda/config/application.rb
+/svn/law_wenda/!svn/ver/32/law-wenda/config/application.rb
 END
 boot.rb
 K 25
@@ -42,6 +42,6 @@ END
 database.yml.example
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svn/law_wenda/!svn/ver/1/law-wenda/config/database.yml.example
+V 64
+/svn/law_wenda/!svn/ver/32/law-wenda/config/database.yml.example
 END

@@ -42,6 +42,12 @@ class User < ActiveRecord::Base
     self.role == User.roles[1]
   end
   
+  # 是否读过 question 的最近更新
+  def question_read?(question)
+    last_answer_id = question.last_answer.id rescue -1
+    Rails.cache.read("user:#{self.id}:question_read:#{question.id}") == last_answer_id
+  end
+  
   def email_md5
     hash = self.email.blank? ? Digest::MD5.hexdigest("") : Digest::MD5.hexdigest(self.email)
     hash

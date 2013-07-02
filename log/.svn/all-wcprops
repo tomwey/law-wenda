@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 40
-/svn/law_wenda/!svn/ver/24/law-wenda/log
+/svn/law_wenda/!svn/ver/37/law-wenda/log
 END
 development.log
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svn/law_wenda/!svn/ver/30/law-wenda/log/development.log
+/svn/law_wenda/!svn/ver/37/law-wenda/log/development.log
 END
 .gitkeep
 K 25
@@ -18,6 +18,6 @@ END
 production.log
 K 25
 svn:wc:ra_dav:version-url
-V 54
-/svn/law_wenda/!svn/ver/1/law-wenda/log/production.log
+V 55
+/svn/law_wenda/!svn/ver/32/law-wenda/log/production.log
 END

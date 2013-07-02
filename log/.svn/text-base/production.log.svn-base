@@ -1349,3 +1349,20 @@ Errno::ECONNREFUSED (Connection refused - connect(2)):
   app/models/user.rb:22:in `send_welcome_mail'
 
 
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-06-05 22:36:06 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 86ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <%= render_page_title %>
+    5: 	<%= stylesheet_link_tag "application", media: "all" %>
+    6:   <% if mobile? %>
+    7:     <%= stylesheet_link_tag "mobile" %>
+    8:     <meta name="apple-mobile-web-app-capable" content="yes">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4463290401669965270_70159566054800'
+
+

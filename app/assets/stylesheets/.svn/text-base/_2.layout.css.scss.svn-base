@@ -4,7 +4,7 @@ body {
 }
 #content {
 	padding: 5px 0; // $baseLineHeight: 20px
-  margin-bottom:  $baseLineHeight;
+  margin-bottom:  20px;
 }
 
 .breadcrumb {
@@ -45,11 +45,11 @@ body {
 
 #footer {
 //  border-top: 1px solid $borderColor;
-  padding: $baseLineHeight 0;
+  padding: 20px 0;
 }
 
 #flash {
-  margin-top: $baseLineHeight;
+  margin-top: 20px;
 }
 
 @media (max-width: 767px) {

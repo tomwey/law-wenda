@@ -1,0 +1,6 @@
+<div class="question question_line">
+  <div class="pull-left avatar">
+    <%= user_avatar_tag(question.user,:normal) %>
+  </div>
+
+</div>

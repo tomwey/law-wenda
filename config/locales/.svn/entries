@@ -1,14 +1,14 @@
 10
 
 dir
-25
+37
 http://t.svnchina.com/svn/law_wenda/law-wenda/config/locales
 http://t.svnchina.com/svn/law_wenda
 
 
 
-2013-05-19T16:18:28.334987Z
-25
+2013-06-25T09:36:20.121933Z
+33
 tomwey
 
 
@@ -202,10 +202,10 @@ file
 
 
 
-2013-04-23T16:17:23.000000Z
-aa9180214a56f235cc43b5f9e116c590
-2013-05-08T15:38:31.196642Z
-1
+2013-06-29T02:36:58.000000Z
+44a98d720c883664fe494e0a6861d65d
+2013-06-25T09:36:20.121933Z
+33
 tomwey
 
 
@@ -228,7 +228,7 @@ tomwey
 
 
 
-107
+3381
 
 common.zh-CN.yml
 file
@@ -266,7 +266,7 @@ tomwey
 
 activerecord.zh-CN.yml
 file
-26
+
 
 
 

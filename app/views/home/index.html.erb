@@ -4,10 +4,10 @@
     <div class="tabbable"> <!-- Only required for left/right tabs -->
       <h3 class="pull-left muted">所有问题</h3>
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#tab1" data-toggle="tab">默认</a></li>
-        <li><a href="#tab2" data-toggle="tab">热门</a></li>
-        <li><a href="#tab2" data-toggle="tab">活跃</a></li>
-        <li><a href="#tab2" data-toggle="tab">没有回答</a></li>
+        <li class="active"><%= link_to '默认', questions_path(:anchor => 'tab1'), 'data-toggle' => 'tab' %></li>
+        <li><%= link_to '热门', hot_questions_path(:anchor => 'tab2'), 'data-toggle' => 'tab' %></li>
+        <li><%= link_to '活跃', activity_questions_path(:anchor => 'tab3'), 'data-toggle' => 'tab' %></li>
+        <li><%= link_to '没有回答', no_answer_questions_path(:anchor => 'tab4'), 'data-toggle' => 'tab' %></li>
       </ul>
       <div class="tab-content">
         <div class="tab-pane active" id="tab1">

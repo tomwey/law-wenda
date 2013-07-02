@@ -1,11 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/svn/law_wenda/!svn/ver/1/law-wenda/vendor/assets/javascripts
+V 62
+/svn/law_wenda/!svn/ver/34/law-wenda/vendor/assets/javascripts
+END
+jquery.timeago.settings.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/law_wenda/!svn/ver/34/law-wenda/vendor/assets/javascripts/jquery.timeago.settings.js.erb
 END
 .gitkeep
 K 25
 svn:wc:ra_dav:version-url
 V 70
 /svn/law_wenda/!svn/ver/1/law-wenda/vendor/assets/javascripts/.gitkeep
+END
+jquery.timeago.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/law_wenda/!svn/ver/34/law-wenda/vendor/assets/javascripts/jquery.timeago.js
 END

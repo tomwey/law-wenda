@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/svn/law_wenda/!svn/ver/1/law-wenda/config/environments
+V 56
+/svn/law_wenda/!svn/ver/32/law-wenda/config/environments
 END
 test.rb
 K 25
@@ -18,6 +18,6 @@ END
 production.rb
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/svn/law_wenda/!svn/ver/1/law-wenda/config/environments/production.rb
+V 70
+/svn/law_wenda/!svn/ver/32/law-wenda/config/environments/production.rb
 END

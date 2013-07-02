@@ -9,7 +9,16 @@ class Question < ActiveRecord::Base
   attr_protected :user_id
   validates_presence_of :user_id, :title, :body, :node_id
   
+  scope :without_body, except(:body)
   scope :recent, order('id DESC')
+  scope :hot, order('answers_count DESC')
+  scope :activity, order('visit_count DESC')
+  scope :no_answer, where(:answers_count => 0)
+  
+  
+  def last_answer
+    answers.recent.limit(1).first
+  end
   
   def update_answered_at(answer)
     self.answered_at = answer.created_at

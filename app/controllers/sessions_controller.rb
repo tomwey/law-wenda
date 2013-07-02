@@ -9,4 +9,5 @@ class SessionsController < Devise::SessionsController
       format.json { render :status => '201', :json => resource.as_json(:only => [:login, :email, :private_token]) }
     end
   end
+  
 end

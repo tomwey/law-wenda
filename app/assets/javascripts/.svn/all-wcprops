@@ -1,11 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 58
-/svn/law_wenda/!svn/ver/8/law-wenda/app/assets/javascripts
+V 59
+/svn/law_wenda/!svn/ver/34/law-wenda/app/assets/javascripts
+END
+app.coffee
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/law_wenda/!svn/ver/34/law-wenda/app/assets/javascripts/app.coffee
 END
 application.js
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/svn/law_wenda/!svn/ver/8/law-wenda/app/assets/javascripts/application.js
+V 74
+/svn/law_wenda/!svn/ver/33/law-wenda/app/assets/javascripts/application.js
 END

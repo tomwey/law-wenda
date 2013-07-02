@@ -2,10 +2,31 @@
 <html>
 <head>
   <title>LawWenda - Control Panel</title>
-  <link rel="shortcut icon" href="<%= asset_path("big_logo.png") %>" />
-  <%= stylesheet_link_tag "cpanel" %>
+  <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tag %>
+  
+  <style type="text/css">
+    body { color: #333; padding-top: 60px;}
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      font-size: 11px;
+    }
+    .group { margin-bottom:20px; }
+    .group h2 { font-size:12px; margin-bottom:8px; }
+    .group ul { margin:0 20px;}
+
+    table tr.deleted td { text-decoration: line-through; color:#999}
+  </style>
+  
 </head>
 <body>
   <div class="navbar navbar-fixed-top">

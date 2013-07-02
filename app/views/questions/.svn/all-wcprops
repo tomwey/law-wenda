@@ -1,11 +1,47 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svn/law_wenda/!svn/ver/31/law-wenda/app/views/questions
+/svn/law_wenda/!svn/ver/35/law-wenda/app/views/questions
+END
+_question.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/law_wenda/!svn/ver/34/law-wenda/app/views/questions/_question.html.erb
 END
 index.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svn/law_wenda/!svn/ver/31/law-wenda/app/views/questions/index.html.erb
+/svn/law_wenda/!svn/ver/35/law-wenda/app/views/questions/index.html.erb
+END
+_sidebar.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/law_wenda/!svn/ver/34/law-wenda/app/views/questions/_sidebar.html.erb
+END
+hot.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/law_wenda/!svn/ver/34/law-wenda/app/views/questions/hot.html.erb
+END
+no_answer.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/law_wenda/!svn/ver/34/law-wenda/app/views/questions/no_answer.html.erb
+END
+activity.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/law_wenda/!svn/ver/34/law-wenda/app/views/questions/activity.html.erb
+END
+_menu.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/law_wenda/!svn/ver/35/law-wenda/app/views/questions/_menu.html.erb
 END

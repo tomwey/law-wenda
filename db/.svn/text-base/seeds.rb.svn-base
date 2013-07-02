@@ -30,22 +30,4 @@
 # Node.create(name: "私人律师", summary: "与私人律师方面的法律", sort: 2, section_id: 6)
 # Node.create(name: "常年顾问", summary: "与常年顾问方面的法律", sort: 3, section_id: 6)
 
-# 首页
-# SiteConfig.index_html
-SiteConfig.create(:key => "index_html", :value => <<-eos
-<div class="well" style="text-align:center;">
-  <p><img alt="Big_logo" src="assets/big_logo.png" /></p>
-  <p></p>
-  <p>Law Wenda Communite，致力于为用户搭建一个法律资讯的平台。</p>
-</div>
-eos
-)
-
-
-# Footer HTML
-SiteConfig.create(:key => "footer_html", :value => <<-eos 
-<p class="copyright">
-  &copy; Law Wenda Group.
-</p>
-eos
-)
+User.create(login:'tomwey', email:'tomwey@163.com', password:'123456', password_confirmation:'123456')

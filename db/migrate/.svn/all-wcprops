@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 47
-/svn/law_wenda/!svn/ver/23/law-wenda/db/migrate
+/svn/law_wenda/!svn/ver/29/law-wenda/db/migrate
 END
 20130517152218_add_avatar_to_users.rb
 K 25
@@ -9,11 +9,11 @@ svn:wc:ra_dav:version-url
 V 85
 /svn/law_wenda/!svn/ver/20/law-wenda/db/migrate/20130517152218_add_avatar_to_users.rb
 END
-20130514140959_add_profession_to_profiles.rb
+20130410144225_devise_create_users.rb
 K 25
 svn:wc:ra_dav:version-url
-V 92
-/svn/law_wenda/!svn/ver/14/law-wenda/db/migrate/20130514140959_add_profession_to_profiles.rb
+V 84
+/svn/law_wenda/!svn/ver/1/law-wenda/db/migrate/20130410144225_devise_create_users.rb
 END
 20130512155045_add_profile_id_to_nodes.rb
 K 25
@@ -21,17 +21,11 @@ svn:wc:ra_dav:version-url
 V 89
 /svn/law_wenda/!svn/ver/12/law-wenda/db/migrate/20130512155045_add_profile_id_to_nodes.rb
 END
-20130410144225_devise_create_users.rb
+20130514140959_add_profession_to_profiles.rb
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/svn/law_wenda/!svn/ver/1/law-wenda/db/migrate/20130410144225_devise_create_users.rb
-END
-20130512150703_change_columns_for_nodes.rb
-K 25
-svn:wc:ra_dav:version-url
-V 90
-/svn/law_wenda/!svn/ver/12/law-wenda/db/migrate/20130512150703_change_columns_for_nodes.rb
+V 92
+/svn/law_wenda/!svn/ver/14/law-wenda/db/migrate/20130514140959_add_profession_to_profiles.rb
 END
 20130426152918_add_private_token_to_users.rb
 K 25
@@ -39,11 +33,17 @@ svn:wc:ra_dav:version-url
 V 91
 /svn/law_wenda/!svn/ver/1/law-wenda/db/migrate/20130426152918_add_private_token_to_users.rb
 END
-20130519090158_create_questions.rb
+20130512150703_change_columns_for_nodes.rb
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/svn/law_wenda/!svn/ver/23/law-wenda/db/migrate/20130519090158_create_questions.rb
+V 90
+/svn/law_wenda/!svn/ver/12/law-wenda/db/migrate/20130512150703_change_columns_for_nodes.rb
+END
+20130509024038_add_user_id_to_profile.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/law_wenda/!svn/ver/6/law-wenda/db/migrate/20130509024038_add_user_id_to_profile.rb
 END
 20130509033759_change_role_default.rb
 K 25
@@ -51,11 +51,11 @@ svn:wc:ra_dav:version-url
 V 85
 /svn/law_wenda/!svn/ver/16/law-wenda/db/migrate/20130509033759_change_role_default.rb
 END
-20130509024038_add_user_id_to_profile.rb
+20130519090158_create_questions.rb
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/svn/law_wenda/!svn/ver/6/law-wenda/db/migrate/20130509024038_add_user_id_to_profile.rb
+V 82
+/svn/law_wenda/!svn/ver/23/law-wenda/db/migrate/20130519090158_create_questions.rb
 END
 20130519090659_add_question_count_to_users.rb
 K 25
@@ -69,29 +69,29 @@ svn:wc:ra_dav:version-url
 V 87
 /svn/law_wenda/!svn/ver/23/law-wenda/db/migrate/20130519130156_add_verified_to_users.rb
 END
-20130512154325_add_user_id_to_nodes.rb
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/svn/law_wenda/!svn/ver/12/law-wenda/db/migrate/20130512154325_add_user_id_to_nodes.rb
-END
 20130508151440_add_role_to_users.rb
 K 25
 svn:wc:ra_dav:version-url
 V 82
 /svn/law_wenda/!svn/ver/1/law-wenda/db/migrate/20130508151440_add_role_to_users.rb
 END
-20130520131815_create_site_configs.rb
+20130512154325_add_user_id_to_nodes.rb
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/svn/law_wenda/!svn/ver/27/law-wenda/db/migrate/20130520131815_create_site_configs.rb
+V 86
+/svn/law_wenda/!svn/ver/12/law-wenda/db/migrate/20130512154325_add_user_id_to_nodes.rb
 END
 20130411142612_add_login_to_users.rb
 K 25
 svn:wc:ra_dav:version-url
 V 83
 /svn/law_wenda/!svn/ver/1/law-wenda/db/migrate/20130411142612_add_login_to_users.rb
+END
+20130520131815_create_site_configs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/law_wenda/!svn/ver/27/law-wenda/db/migrate/20130520131815_create_site_configs.rb
 END
 20130523130425_add_indexes_to_tables.rb
 K 25

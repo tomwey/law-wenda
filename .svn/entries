@@ -1,14 +1,14 @@
 10
 
 dir
-25
+37
 http://t.svnchina.com/svn/law_wenda/law-wenda
 http://t.svnchina.com/svn/law_wenda
 
 
 
-2013-05-19T16:18:28.334987Z
-25
+2013-07-01T15:29:51.529603Z
+37
 tomwey
 
 
@@ -145,14 +145,14 @@ dir
 
 Gemfile.lock
 file
-28
 
 
 
-2013-05-23T13:09:00.000000Z
-131716b58f6c2f86b2e80e2df0b368b2
-2013-05-23T13:45:03.633656Z
-28
+
+2013-06-29T02:36:58.000000Z
+211a5419797fc54a8ca4395d9d007a59
+2013-06-25T09:36:20.121933Z
+33
 tomwey
 
 
@@ -175,7 +175,7 @@ tomwey
 
 
 
-4787
+5280
 
 tmp
 dir
@@ -184,12 +184,6 @@ dir
 dir
 
 script
-dir
-
-doc
-dir
-
-config
 dir
 
 .gitignore
@@ -226,19 +220,25 @@ tomwey
 
 491
 
+config
+dir
+
+doc
+dir
+
 lib
 dir
 
 Gemfile
 file
-28
 
 
 
-2013-05-23T13:07:28.000000Z
-a5b0334e4dccc2547685fe614aad3f44
-2013-05-23T13:45:03.633656Z
-28
+
+2013-06-02T15:42:09.000000Z
+710c49122bcb668d4ebf490645d47ae4
+2013-06-24T15:13:49.873674Z
+32
 tomwey
 
 
@@ -261,7 +261,7 @@ tomwey
 
 
 
-1444
+1430
 
 public
 dir
