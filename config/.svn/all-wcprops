@@ -3,6 +3,12 @@ svn:wc:ra_dav:version-url
 V 43
 /svn/law_wenda/!svn/ver/33/law-wenda/config
 END
+unicorn.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/law_wenda/!svn/ver/39/law-wenda/config/unicorn.rb
+END
 settings.yml
 K 25
 svn:wc:ra_dav:version-url
@@ -39,9 +45,33 @@ svn:wc:ra_dav:version-url
 V 58
 /svn/law_wenda/!svn/ver/17/law-wenda/config/environment.rb
 END
+nginx.conf
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/law_wenda/!svn/ver/39/law-wenda/config/nginx.conf
+END
+unicorn_init.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/law_wenda/!svn/ver/39/law-wenda/config/unicorn_init.sh
+END
+settings.yml.example
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/law_wenda/!svn/ver/39/law-wenda/config/settings.yml.example
+END
 database.yml.example
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svn/law_wenda/!svn/ver/32/law-wenda/config/database.yml.example
+END
+deploy.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/law_wenda/!svn/ver/39/law-wenda/config/deploy.rb
 END

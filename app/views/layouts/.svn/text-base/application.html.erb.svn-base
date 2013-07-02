@@ -2,7 +2,8 @@
 <html>
 <head>
   <%= render_page_title %>
-	<%= stylesheet_link_tag "application", media: "all" %>
+	<%= stylesheet_link_tag "front" %>
+  <%= yield :styles %>
   <% if mobile? %>
     <%= stylesheet_link_tag "mobile" %>
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,6 +12,7 @@
   <% end %>
   <meta name="keywords" content="<%= @meta_keywords %>" />
   <meta name="description" content="<%= @meta_description %>" />
+  <link rel="shortcut icon" href="<%= asset_path('icon-wenda.png') %>" />
   <meta charset='utf-8'>
   <%= csrf_meta_tags %>
 </head>

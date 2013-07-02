@@ -9,6 +9,12 @@ svn:wc:ra_dav:version-url
 V 66
 /svn/law_wenda/!svn/ver/1/law-wenda/app/views/users/index.html.erb
 END
+_base.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/law_wenda/!svn/ver/39/law-wenda/app/views/users/_base.html.erb
+END
 _info.html.erb
 K 25
 svn:wc:ra_dav:version-url
@@ -19,7 +25,7 @@ show.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/law_wenda/!svn/ver/24/law-wenda/app/views/users/show.html.erb
+/svn/law_wenda/!svn/ver/38/law-wenda/app/views/users/show.html.erb
 END
 _profile_form.html.erb
 K 25
