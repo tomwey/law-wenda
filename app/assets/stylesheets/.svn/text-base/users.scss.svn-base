@@ -1,3 +1,27 @@
 .user-icon {
   text-align: center;
 }
+
+.professions {
+  background:white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.profession-item {
+  margin: 10px 0;
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  h2 {
+    font-size: 14px;
+    margin:0;
+    padding:0;
+    height:30px;
+    line-height: 30px;
+  }
+  div {
+    margin-top: -5px;
+  }
+}

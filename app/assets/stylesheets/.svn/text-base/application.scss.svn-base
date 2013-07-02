@@ -27,6 +27,8 @@ body {
   
 }
 
+.box_gray { background: #F5F5F5; }
+
 ul, ol {
   &.horizontal {
     @extend .unstyled;

@@ -1,6 +1,6 @@
 <div class="submenu">
   <h4 class="muted pull-left">所有问题</h4>
-  <ul class="subnav unstyled pull-right">
+  <ul class="subnav unstyled">
       <li <%= "class=active" if action_name == "index" %>><%= link_to '默认', questions_path %></li> /
       <li <%= "class=active" if action_name == "hot" %>><%= link_to '热门', hot_questions_path %></li> /
       <li <%= "class=active" if action_name == "activity" %>><%= link_to '活跃', activity_questions_path %></li> /

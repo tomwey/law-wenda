@@ -19,6 +19,7 @@ LawWenda::Application.routes.draw do
       get :activity
       get :no_answer
     end
+    resources :answers
   end
 
   namespace :cpanel do

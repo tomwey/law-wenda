@@ -48,6 +48,13 @@ class User < ActiveRecord::Base
     Rails.cache.read("user:#{self.id}:question_read:#{question.id}") == last_answer_id
   end
   
+  # 将 question 的最后回答设置为已读
+  def read_question(question)
+    # 处理 last_answer_id 是空的情况
+    last_answer_id = question.last_answer.id rescue -1
+    Rails.cache.write("user:#{self.id}:question_read:#{question.id}", last_answer_id)
+  end
+  
   def email_md5
     hash = self.email.blank? ? Digest::MD5.hexdigest("") : Digest::MD5.hexdigest(self.email)
     hash

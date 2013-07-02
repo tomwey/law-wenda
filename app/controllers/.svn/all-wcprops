@@ -7,7 +7,7 @@ questions_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svn/law_wenda/!svn/ver/36/law-wenda/app/controllers/questions_controller.rb
+/svn/law_wenda/!svn/ver/41/law-wenda/app/controllers/questions_controller.rb
 END
 account_controller.rb
 K 25
@@ -24,8 +24,8 @@ END
 application_controller.rb
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/svn/law_wenda/!svn/ver/1/law-wenda/app/controllers/application_controller.rb
+V 78
+/svn/law_wenda/!svn/ver/41/law-wenda/app/controllers/application_controller.rb
 END
 sessions_controller.rb
 K 25

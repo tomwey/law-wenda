@@ -19,6 +19,15 @@ class ApplicationController < ActionController::Base
     end
   end
   
+  def set_seo_meta(title = '', meta_keywords = '', meta_description = '')
+    if title.length > 0
+      @page_title = "#{title}"
+    end
+    @meta_keywords = meta_keywords
+    @meta_description = meta_description
+    
+  end
+  
   def notice_success(msg)
     flash[:notice] = msg
   end

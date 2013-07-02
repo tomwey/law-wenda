@@ -1,0 +1,52 @@
+<%= render 'base' %>
+
+<div class="row-fluid">
+  <div class="span9">
+    <div id="question_show" class="questions box">
+      <div class="question hentry">
+        <%= render :partial => "questions/question_info", :locals => { :question => @question } %>
+    
+        <div class="body entry-content">
+          <%= @question.body %>
+        </div>
+      </div>
+    </div>
+    
+    <% if @answers.blank? %>
+      <div class="no_result">
+        暂时没有回复
+      </div>
+    <% else %>
+    <div id="answers" class="box box_gray">
+      <div class="total">
+        共收到 <b><%= @question.answers_count %></b> 条回复
+      </div>
+      <div class="items">
+        <%= cache([@question,params[:page]]) do %>
+          <%= render :partial => "answers/answer", :collection => @answers %>
+        <% end %>
+      </div>
+    <% end %>
+    
+  </div>
+  
+  <% if current_user %>
+    <div id="answer" class="form box">
+      
+      <%= form_for(Answer.new, :remote => true,:url => question_answers_path(@question)) do |f| %>
+        <%= f.text_area :body,:class => "topic_editor span10", :rows => "4", :tabindex => "1" %>
+        <div class="submit_buttons pull-right">
+          <button type="submit" id="btn_answer" class="btn btn-primary" tabindex="2">提交回复</button><br />
+          <span class="help-inline">Ctrl+Enter</span>
+        </div>
+        
+      <% end %>
+    </div>
+  <% else %>
+      <%= render :partial => "questions/translation/need_login_to_reply" %>
+  <% end %>
+  
+  <div class="span3">
+    
+  </div>
+</div>

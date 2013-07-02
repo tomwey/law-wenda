@@ -24,4 +24,8 @@ class Question < ActiveRecord::Base
     self.answered_at = answer.created_at
     self.save
   end
+  
+  def visit
+    self.class.increment_counter(:visit_count, self.id)
+  end
 end

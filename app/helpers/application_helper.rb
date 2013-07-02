@@ -17,6 +17,12 @@ module ApplicationHelper
     user.try(:admin?)
   end
   
+  def owner?(item)
+    return false if item.blank?
+    return if current_user.blank?
+    item.user_id == current_user.id
+  end
+  
   def timeago(time, options ={})
     options[:class] ||= "timeago"
     content_tag(:abbr, "", options.merge(:title => time.iso8601)) if time
