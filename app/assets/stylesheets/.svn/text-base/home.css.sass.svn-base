@@ -1,7 +1,0 @@
-@import "bootstrap"
-
-$zebra-color: #F0F0F0
-
-body
-	font-family: "微软雅黑", "Microsoft Yahei Font","Arial","宋体"
-	font-size: 16px

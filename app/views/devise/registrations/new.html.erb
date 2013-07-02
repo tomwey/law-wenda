@@ -1,5 +1,6 @@
+<%= render 'users/base' %>
 <div class="row-fluid">
-  <div class="span8 offset2 well">
+  <div class="span9 well">
     <%= simple_form_for(setup_user(resource), :as => resource_name, :url => registration_path(resource_name), :html => { :class => 'form-horizontal' }) do |f| %>    
     
     <%= render "shared/error_messages", :target => resource %>
@@ -46,6 +47,10 @@
     </div>
     </fieldset>
     <% end %>
+  </div>
+  
+  <div class="span3 well">
+    <%= render :partial => "devise/shared/links" %>
   </div>
 </div>
 
