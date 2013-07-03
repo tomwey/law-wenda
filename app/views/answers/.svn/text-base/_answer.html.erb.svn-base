@@ -1,11 +1,11 @@
 <% cache([answer]) do %>
-<div class="answer" id="reply<%= answer_counter + 1 %>">
+<div class="answer">
   <div class="pull-left face"><%= user_avatar_tag(answer.user, :normal) %></div>
   <div class="infos">
     <div class="info">
       <span class="name"><%= user_name_tag(answer.user) %></span>
       <span class="time">
-        <%= answer_counter + 1 %>楼, <%= raw t("common.reply_at", :time => timeago(answer.created_at)) %>
+        <%= raw t("common.reply_at", :time => timeago(answer.created_at)) %>
         <% if owner?(answer) %>
           <%= link_to("", edit_question_answer_path(@question,answer), :class => "icon small_edit", :title => "修改回帖")%>
         <% end %>

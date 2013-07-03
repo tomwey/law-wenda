@@ -1,12 +1,19 @@
 # coding: utf-8
 class UsersController < ApplicationController
   
+  before_filter :set_menu_active
   before_filter :find_user, :only => [:show]
+  caches_action :index, :expires_in => 2.hours, :layout => false
   
   def index
+    @total_lawer_count = User.lawer.count
+    @active_lawers = User.lawer.hot.limit(30)
+    @recent_join_lawers = User.lawer.recent.limit(30)
+    drop_breadcrumb("律师")
   end
 
   def show
+    set_seo_meta("#{@user.login}")
     drop_breadcrumb(@user.login)
   end
   
@@ -25,5 +32,9 @@ class UsersController < ApplicationController
     
     @user = User.where(:login => params[:id]).first
     render_404 if @user.nil?
+  end
+  
+  def set_menu_active
+    @current = @current = ['/users']
   end
 end

@@ -25,3 +25,20 @@
     margin-top: -5px;
   }
 }
+
+#users {
+  .info { margin-bottom:10px; text-align:right;}
+}
+.user_list {
+  padding-bottom:20px; margin-left:0;margin-top:20px;
+  h2 { font-size:14px; margin:0; padding-left: 10px;}
+  .span1 {
+    width:70px; text-align:center; margin-top:20px; margin-left:20px;
+    .name {
+      overflow: hidden;
+    }
+    .avatar {
+      img { width:48px; height:48px; }
+    }
+  }
+}

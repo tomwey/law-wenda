@@ -1,0 +1,11 @@
+<% if @questions.present? %>
+<div class="box">
+  <h2>其他相关问题</h2>
+  <ul>
+  <% for question in @questions do %>
+    <li><%= link_to(truncate(question.title, :length => 30), question_path(question), :title => question.title) %></li>
+  <% end %>
+  </ul>
+</div>
+<% end %>
+

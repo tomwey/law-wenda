@@ -12,8 +12,8 @@
             <% end %>
             <%= link_to t('label.logout'), destroy_user_session_path, :method => :delete %>
           <% else %>
-            <%= link_to t('label.sign_in'), new_user_session_path, class: 'muted' %>
             <%= link_to t('label.sign_up'), new_user_registration_path, class: 'muted' %>
+            <%= link_to t('label.sign_in'), new_user_session_path, class: 'muted' %>
           <% end %>
         </div>
       </div>
@@ -28,9 +28,9 @@
      
         <ul class="nav">
           <li class="divider-vertical muted"></li>
-          <li><a href="#" class="first"><%= t('layout.nav.question') %></a></li>
-          <li><a href="#"><%= t('layout.nav.category') %></a></li>
-          <li><a href="#"><%= t('layout.nav.lawer') %></a></li>
+          <li><%= link_to t('layout.nav.question'), questions_path, class:"first" %></li>
+          <li><%= link_to t('layout.nav.category'), nodes_path %></li>
+          <li><%= link_to t('layout.nav.lawer'), users_path %></li>
         </ul>
         
         <form class="navbar-search pull-right">

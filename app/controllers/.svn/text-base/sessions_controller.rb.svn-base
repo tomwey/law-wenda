@@ -1,4 +1,9 @@
 class SessionsController < Devise::SessionsController
+  
+  def new
+    super
+    session["user_return_to"] = request.referrer
+  end
   def create
     resource = warden.authenticate!(:scope => resource_name, :recall => "#{controller_path}#new")
     set_flash_message(:notice, :signed_in) if is_navigational_format?

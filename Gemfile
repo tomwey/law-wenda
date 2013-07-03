@@ -10,6 +10,8 @@ gem 'devise'
 gem 'devise-async'
 gem 'settingslogic'
 
+gem 'cells'
+
 # 上传组件
 gem 'carrierwave', '0.6.2'
 gem 'mini_magick', :git => 'git://github.com/fschwahn/mini_magick.git'

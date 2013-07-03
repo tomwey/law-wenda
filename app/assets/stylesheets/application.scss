@@ -25,6 +25,19 @@ body {
   -moz-border-radius: 8px;
 	background: rgb(248,248,248);
   
+  h2 {
+    font-size: 12px;
+    text-align:center;
+    border-bottom: 1px solid #ddd;
+    margin:0;
+    padding:0;
+    height:30px;
+    line-height:30px;
+    margin-bottom:10px;
+    
+    @extend .muted
+  }
+  
 }
 
 .box_gray { background: #F5F5F5; }

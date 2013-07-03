@@ -27,6 +27,8 @@ class User < ActiveRecord::Base
   
   scope :member, where(:role => '用户')
   scope :lawer, where(:role => '律师')
+  scope :hot, order('answers_count DESC')
+  scope :recent, order('created_at DESC')
   
   delegate :location, :to => :profile, :allow_nil => true
   

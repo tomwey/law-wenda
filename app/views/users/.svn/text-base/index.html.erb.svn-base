@@ -1,2 +1,23 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<%= render 'base' %>
+<div id="users">
+  <div class="info well well-small">目前已经有 <%= @total_lawer_count %> 位律师加入了 法律问问。</div>
+  <div id="hot_users" class="user_list box clearfix">
+    <h2>TOP 100 活跃律师</h2>
+    <% @active_lawers.each do |item| %>
+      <div class="item span1">
+        <div class="avatar"><%= user_avatar_tag(item) %></div>
+        <div class="name"><%= user_name_tag(item) %></div>
+      </div>
+    <% end %>
+  </div>
+
+  <div id="recent_users" class="user_list box clearfix">
+    <h2>最新加入</h2>
+    <% @recent_join_lawers.each do |item| %>
+      <div class="item span1">
+        <div class="avatar"><%= user_avatar_tag(item) %></div>
+        <div class="name"><%= user_name_tag(item) %></div>
+      </div>
+    <% end %>
+  </div>
+</div>

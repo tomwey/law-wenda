@@ -1,5 +1,9 @@
 LawWenda::Application.routes.draw do
 
+  get "answers/create"
+
+  get "nodes/index"
+
   require 'api'
   
   devise_for :users, :path => "account", :controllers => {
