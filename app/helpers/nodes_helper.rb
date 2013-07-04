@@ -2,7 +2,7 @@
 module NodesHelper
   
   def render_node_name(node)
-    link_to(node.name, node_questions_path(node))
+    link_to(node.name, node_questions_path(node), :class => 'node')
   end
   
 end

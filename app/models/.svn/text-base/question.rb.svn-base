@@ -16,6 +16,11 @@ class Question < ActiveRecord::Base
   scope :no_answer, where(:answers_count => 0)
   
   
+  
+  def self.without_me(question)
+    where('questions.id != ?', question.id)
+  end
+  
   def last_answer
     answers.recent.limit(1).first
   end

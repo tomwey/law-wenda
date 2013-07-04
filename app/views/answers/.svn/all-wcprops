@@ -3,9 +3,15 @@ svn:wc:ra_dav:version-url
 V 54
 /svn/law_wenda/!svn/ver/42/law-wenda/app/views/answers
 END
+create.js.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/law_wenda/!svn/ver/46/law-wenda/app/views/answers/create.js.erb
+END
 _answer.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svn/law_wenda/!svn/ver/43/law-wenda/app/views/answers/_answer.html.erb
+/svn/law_wenda/!svn/ver/45/law-wenda/app/views/answers/_answer.html.erb
 END

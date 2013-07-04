@@ -1,0 +1,15 @@
+<% cache("question/#{question.id}:#{question.updated_at.to_i}/answers", :expires_in => 2.weeks) do %>
+  <% if @answers.blank? %>
+    <div class="no_result clearfix">
+      暂时没有答案
+    </div>
+  <% else %>
+  <div id="answers" class="box box_gray">
+    <%= render "questions/translation/question_answer_statics", :question => question %>
+    <div class="items">
+      <%= render :partial => "answers/answer", :collection => answers %>
+    </div>
+  </div>
+  <% end %>
+<% end %>
+

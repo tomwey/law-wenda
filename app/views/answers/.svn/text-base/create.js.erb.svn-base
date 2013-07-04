@@ -1,0 +1,12 @@
+<% if @answer.errors.blank? %>
+  if ($("#answers").length == 0) {
+    location.href = location.href;
+  } else {
+    // alert('<%= j render :partial => "questions/translation/question_answer_statics", :locals => { :question => @question } %>');
+    $("#answers .items").prepend('<%= j render("answer", :answer => @answer) %>');
+    $("#answers .total").replaceWith('<%= j render :partial => "questions/translation/question_answer_statics", :locals => { :question => @question } %>');
+    Questions.answerCallback(1, '<%= escape_javascript(@msg) %>');
+  }
+<% else %>
+  Questions.answerCallback(0, "<%= escape_javascript(@msg) %>");
+<% end %>

@@ -1,0 +1,3 @@
+<div class="total">
+  共 <b><%= question.answers_count %></b> 个答案
+</div>

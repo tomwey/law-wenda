@@ -4,6 +4,7 @@ zh-CN:
       user: "用户"
       profile: "个人资料"
       question: "问题"
+      answer: "回答"
       node: "节点"
       section: "分类"
       site_config: "站点设置"
@@ -26,6 +27,8 @@ zh-CN:
       question:
         title: "标题"
         body: "正文"
+      answer:
+        body: "回答内容"
       node:
         name: "名称"
         summary: "简介"

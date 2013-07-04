@@ -9,10 +9,6 @@
         <% if owner?(answer) %>
           <%= link_to("", edit_question_answer_path(@question,answer), :class => "icon small_edit", :title => "修改回帖")%>
         <% end %>
-        <%= link_to("", "#",
-            'data-floor' => answer_counter + 1, 'data-login' => answer.user_login,
-            :title => '回复此楼', :class => "icon small_reply" )
-        %>
       </span>
     </div>
     <div class="body">

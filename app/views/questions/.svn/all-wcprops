@@ -31,7 +31,7 @@ _base.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svn/law_wenda/!svn/ver/39/law-wenda/app/views/questions/_base.html.erb
+/svn/law_wenda/!svn/ver/45/law-wenda/app/views/questions/_base.html.erb
 END
 hot.html.erb
 K 25
@@ -55,13 +55,19 @@ show.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svn/law_wenda/!svn/ver/43/law-wenda/app/views/questions/show.html.erb
+/svn/law_wenda/!svn/ver/45/law-wenda/app/views/questions/show.html.erb
 END
 _question_info.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 80
 /svn/law_wenda/!svn/ver/42/law-wenda/app/views/questions/_question_info.html.erb
+END
+_answers.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/law_wenda/!svn/ver/46/law-wenda/app/views/questions/_answers.html.erb
 END
 _menu.html.erb
 K 25

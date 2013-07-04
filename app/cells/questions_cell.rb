@@ -10,7 +10,7 @@ class QuestionsCell < BaseCell
     question = args[:question]
     limit = question.answers_count > 20 ? 20 : question.answers_count
     limit = 1 if limit == 0
-    @questions = question.node.questions.recent.limit(limit)
+    @questions = question.node.questions.without_me(question).recent.limit(limit)
     render
   end
 

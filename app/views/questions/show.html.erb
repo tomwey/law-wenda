@@ -12,28 +12,13 @@
       </div>
     </div>
     
-    <% if @answers.blank? %>
-      <div class="no_result clearfix">
-        暂时没有答案
-      </div>
-    <% else %>
-    <div id="answers" class="box box_gray">
-      <div class="total">
-        共 <b><%= @question.answers_count %></b> 个答案
-      </div>
-      <div class="items">
-        <%= cache([@question,params[:page]]) do %>
-          <%= render :partial => "answers/answer", :collection => @answers %>
-        <% end %>
-      </div>
-    </div>
-    <% end %>
+    <%= render :partial => "questions/answers", :locals => { :question => @question, :answers => @answers } %>
     
     <% if current_user %>
       <div id="answer" class="form box">
         <h4 class="muted">您的答案</h4>
         <%= form_for(Answer.new, :remote => true,:url => question_answers_path(@question)) do |f| %>
-          <%= f.text_area :body,:class => "topic_editor span12", :rows => "4", :tabindex => "1" %><br />      
+          <%= f.text_area :body,:class => "topic_editor span12", :rows => "4" %><br />      
           <%= f.submit '提交答案', :class => 'btn btn-primary', :disable_with => "正在提交..." %>
         <% end %>
       </div>
